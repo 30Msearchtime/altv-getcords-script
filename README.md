@@ -58,6 +58,6 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ## Contact
 
-30Msearchtime - [Discord](https://discord.com/users/426081591832346624) - toolbotsystem@gmail.com
-
-AltV GetCoords Script - [Project Link](https://github.com/30Msearchtime/altv-getcords-script)
+- [30Msearchtime](https://github.com/30Msearchtime)
+- [Discord](https://discord.com/users/426081591832346624)
+- toolbotsystem@gmail.com
