@@ -1,4 +1,6 @@
-# AltV GetCoords Script
+# ⚠️ Warning: This version is outdated! A new update is coming soon. ⚠️
+
+# AltV Roleplay GetCoords Script
 
 This TypeScript script for AltV Roleplay servers enables players to easily retrieve and view their current in-game coordinates. By using a simple chat command, players can get precise location details, enhancing their gameplay experience.
 
