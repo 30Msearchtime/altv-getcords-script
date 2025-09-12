@@ -1,0 +1,19 @@
+{
+  "name": "altv-getcoords-script",
+  "version": "2.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "tsc -p .",
+    "watch": "tsc -w -p .",
+    "clean": "rimraf dist"
+  },
+  "devDependencies": {
+    "@altv/types-client": "^16.6.0",
+    "@altv/types-server": "^16.6.0",
+    "@altv/types-shared": "^16.6.0",
+    "@altv/types-natives": "^16.2.1",
+    "typescript": "^5.5.0",
+    "rimraf": "^6.0.0"
+  }
+}
