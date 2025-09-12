@@ -1,65 +1,66 @@
-# ⚠️ Warning: This version is outdated! A new update is coming soon. ⚠️
+# AltV GetCoords Script (TypeScript)
 
-# AltV Roleplay GetCoords Script
+This is a simple, modernized TypeScript resource for alt:V servers that lets players quickly retrieve and copy their current in-game coordinates.  
+It supports both chat command usage (with **vchat**) and a direct event fallback.
 
-This TypeScript script for AltV Roleplay servers enables players to easily retrieve and view their current in-game coordinates. By using a simple chat command, players can get precise location details, enhancing their gameplay experience.
+---
 
-## Features
+## ✨ Features
+- **Get Player Position:** Retrieve exact x, y, z coordinates and dimension.
+- **Clipboard Copy:** Automatically copies the coordinates to the clipboard (requires client permission).
+- **Chat Command (optional):** /getcoords or /getcords via vchat.
+- **Fallback Event:** Works without any chat resource via alt.emitServer('coords:request').
 
-- **Retrieve Coordinates:** Players can get their exact coordinates in the game.
-- **Chat Command:** Easy-to-use chat command `/getcords` for fetching location.
-- **Error Handling:** Robust error handling for better user experience.
-- **Formatted Coordinates:** Display coordinates in a readable format.
+---
 
-## Prerequisites
+## 📦 Requirements
+- Running alt:V server (latest dev or release build)
+- Node.js (LTS recommended)
+- npm for installing dependencies
+- [Optionally] vchat resource for chat command support
 
-Before you start, ensure your server meets the following requirements:
+---
 
-- AltV Server up and running.
-- Node.js and npm installed.
-- TypeScript installed globally (`npm install -g typescript`).
+## 🛠 Installation & Build
+1. Clone the repository  
+   git clone https://github.com/30Msearchtime/altv-getcords-script.git  
+   cd altv-getcords-script
 
-## Installation
+2. Install dependencies  
+   npm install
 
-1. **Clone the Repository:**
+3. Build the TypeScript files  
+   npm run build
 
-- git clone https://github.com/30Msearchtime/altv-getcords-script.git
+4. Copy this folder (with resource.toml + dist/) into your server’s resources/ directory.
 
-2. **Navigate to the Script Directory:**
+---
 
-- cd altv-getcoords-script
+## ▶️ Usage
 
-3. **Compile TypeScript Files:**
+### Option 1: With vchat (recommended)
+- In the game chat, type:  
+  /getcoords  
+  (Alias /getcords also works)  
+- Your coordinates will be printed in chat, logged to the client console, and copied to the clipboard.
 
-- tsc
+### Option 2: Without vchat
+- Open the client console (F8 by default) and run:  
+  alt.emitServer('coords:request')  
+- The coordinates will appear in the console and be copied to the clipboard.
 
-4. **Deploy on AltV Server:**
-Copy the compiled JavaScript files to the respective `resources` folder.
+---
 
-## Usage
+## 🤝 Contributing
+Contributions are welcome!  
+Feel free to fork the repo and submit a pull request with improvements or new features.
 
-To use the script in the game, follow these simple steps:
+---
 
-1. Open the chat box.
-2. Type `/getcords` and press enter.
-3. Your current coordinates will be displayed in the game console.
+## 📄 License
+Distributed under the MIT License. See LICENSE for more information.
 
-## Contributing
+---
 
-Your contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-## License
-
-Distributed under the MIT License. See `LICENSE` for more information.
-
-## Contact
-
-- [30Msearchtime](https://github.com/30Msearchtime)
-- [Discord](https://discord.com/users/426081591832346624)
-- toolbotsystem@gmail.com
+## 📬 Contact
+- GitHub Profile: https://github.com/30Msearchtime  
