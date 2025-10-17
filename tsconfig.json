@@ -1,16 +1,32 @@
 {
   "compilerOptions": {
-    "target": "ES2020",
+    "target": "ESNext",
     "module": "ESNext",
-    "moduleResolution": "NodeNext",
-    "outDir": "dist",
-    "rootDir": ".",
+    "moduleResolution": "bundler",
+    "lib": ["ESNext"],
+    "outDir": "./dist",
+    "rootDir": "./",
     "strict": true,
     "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true,
     "skipLibCheck": true,
-    "typeRoots": ["./node_modules/@types", "./node_modules/@altv"],
-    "allowJs": false
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+    "declaration": false,
+    "sourceMap": false,
+    "types": [
+      "@altv/types-client",
+      "@altv/types-server",
+      "@altv/types-shared",
+      "@altv/types-natives"
+    ]
   },
-  "include": ["server/**/*.ts", "client/**/*.ts"]
+  "include": [
+    "server/**/*",
+    "client/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
 }
