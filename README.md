@@ -1,66 +1,99 @@
-# AltV GetCoords Script (TypeScript)
+# alt:V GetCoords Script (TypeScript) 🚀
 
-This is a simple, modernized TypeScript resource for alt:V servers that lets players quickly retrieve and copy their current in-game coordinates.  
-It supports both chat command usage (with **vchat**) and a direct event fallback.
+> ✨ **Modern, lightweight, and easy-to-use!** Quickly retrieve and copy your in-game coordinates with full TypeScript support.
+
+A simple, modern TypeScript script for alt:V multiplayer servers that lets players fetch their current position and dimension, copy it to the clipboard, and optionally use chat commands via vchat.
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![alt:V](https://img.shields.io/badge/alt:V-JS%20v2-blue)](https://altv.mp)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.6-blue)](https://www.typescriptlang.org/)
 
 ---
 
 ## ✨ Features
-- **Get Player Position:** Retrieve exact x, y, z coordinates and dimension.
-- **Clipboard Copy:** Automatically copies the coordinates to the clipboard (requires client permission).
-- **Chat Command (optional):** /getcoords or /getcords via vchat.
-- **Fallback Event:** Works without any chat resource via alt.emitServer('coords:request').
+
+- 📌 **Get Player Position:** Retrieve exact x, y, z coordinates and dimension
+- 📋 **Clipboard Copy:** Automatically copies coordinates to clipboard (requires client permission)
+- 💬 **Chat Command (optional):** `/getcoords` or `/getcords` via vchat
+- 🔄 **Fallback Event:** Works without chat resource via `alt.emitServer('coords:request')`
 
 ---
 
 ## 📦 Requirements
-- Running alt:V server (latest dev or release build)
-- Node.js (LTS recommended)
-- npm for installing dependencies
-- [Optionally] vchat resource for chat command support
+
+- **alt:V Server** (latest stable or dev build)
+- **Node.js** LTS
+- **npm** for dependency management
+- **[Optional] vchat resource** for chat command support
 
 ---
 
 ## 🛠 Installation & Build
-1. Clone the repository  
-   git clone https://github.com/30Msearchtime/altv-getcords-script.git  
-   cd altv-getcords-script
 
-2. Install dependencies  
-   npm install
+### Step 1: Clone the Repository
 
-3. Build the TypeScript files  
-   npm run build
+```bash
+git clone https://github.com/30Msearchtime/altv-getcords-script.git
+cd altv-getcords-script
+```
 
-4. Copy this folder (with resource.toml + dist/) into your server’s resources/ directory.
+### Step 2: Install Dependencies
+
+```bash
+npm install
+```
+
+### Step 3: Build TypeScript
+
+```bash
+npm run build
+```
+
+### Step 4: Deploy Resource
+
+Copy the folder (with `resource.toml` + `dist/`) into your alt:V server's `resources/` directory.
 
 ---
 
 ## ▶️ Usage
 
-### Option 1: With vchat (recommended)
-- In the game chat, type:  
-  /getcoords  
-  (Alias /getcords also works)  
-- Your coordinates will be printed in chat, logged to the client console, and copied to the clipboard.
+### Option 1: With vchat (Recommended)
+
+1. Open in-game chat  
+2. Type: `/getcoords` (alias `/getcords`)  
+3. Coordinates will appear in chat, logged to client console, and copied to clipboard
 
 ### Option 2: Without vchat
-- Open the client console (F8 by default) and run:  
-  alt.emitServer('coords:request')  
-- The coordinates will appear in the console and be copied to the clipboard.
+
+1. Open client console (F8 by default)  
+2. Run: `alt.emitServer('coords:request')`  
+3. Coordinates will appear in console and be copied to clipboard
 
 ---
 
 ## 🤝 Contributing
-Contributions are welcome!  
-Feel free to fork the repo and submit a pull request with improvements or new features.
+
+Contributions, improvements, and feature requests are welcome!  
+
+1. **Fork** the repository  
+2. **Create** a feature branch  
+3. **Commit** your changes  
+4. **Push** and open a Pull Request
 
 ---
 
 ## 📄 License
-Distributed under the MIT License. See LICENSE for more information.
+
+This project is licensed under the **MIT License** – see LICENSE for details.
 
 ---
 
 ## 📬 Contact
-- GitHub Profile: https://github.com/30Msearchtime  
+
+- GitHub: [@30Msearchtime](https://github.com/30Msearchtime)
+- Discord: [426081591832346624](https://discord.com/users/426081591832346624)
+- Email: toolbotsystem@gmail.com
+
+---
+
+**Made with ❤️ for the alt:V community**
