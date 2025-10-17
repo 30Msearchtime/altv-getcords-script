@@ -1,0 +1,17 @@
+type = "js"
+client-type = "js"
+
+main = "dist/server/server.js"
+client-main = "dist/client/client.js"
+
+client-files = [
+    "dist/client/*"
+]
+
+# Clipboard permission is required for copyToClipboard
+optional-permissions = [
+    "Clipboard Access"
+]
+
+# Optional: vchat as dependency if available
+# deps = ["vchat"]
