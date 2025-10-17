@@ -1,19 +1,27 @@
 {
-  "name": "altv-getcoords-script",
+  "name": "altv-getcords-script",
   "version": "2.0.0",
-  "private": true,
-  "type": "module",
+  "description": "Modern TypeScript GetCoords Script for alt:V (2025)",
+  "main": "dist/server/server.js",
   "scripts": {
-    "build": "tsc -p .",
-    "watch": "tsc -w -p .",
+    "build": "tsc",
+    "watch": "tsc --watch",
     "clean": "rimraf dist"
   },
+  "keywords": [
+    "altv",
+    "typescript",
+    "coordinates",
+    "gta5"
+  ],
+  "author": "30Msearchtime",
+  "license": "MIT",
   "devDependencies": {
-    "@altv/types-client": "^16.6.0",
-    "@altv/types-server": "^16.6.0",
-    "@altv/types-shared": "^16.6.0",
-    "@altv/types-natives": "^16.2.1",
-    "typescript": "^5.5.0",
-    "rimraf": "^6.0.0"
+    "@altv/types-client": "^16.3.37",
+    "@altv/types-natives": "^3.0.3",
+    "@altv/types-server": "^16.3.37",
+    "@altv/types-shared": "^16.3.37",
+    "typescript": "^5.7.2",
+    "rimraf": "^6.0.1"
   }
 }
